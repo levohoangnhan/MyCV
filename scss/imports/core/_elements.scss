@@ -1,0 +1,100 @@
+// css button, title, icon, elements...
+
+@mixin titH2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@mixin textBox {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: pn;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+@mixin textElis {
+    font-size: 12px;
+    font-style : italic;
+}
+@mixin textUp {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+@mixin button {
+    text-decoration: none;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@mixin invert {
+    filter: invert(100%);
+}
+
+@mixin inline {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background :#000;
+    display: inline-block;
+}
+
+@mixin inline1 {
+    content: "";
+    width: 220px;
+    height: 1px;
+    background :#000;
+    display: inline-block;
+}
+
+
+.studio__number {
+    background: #ffde00;
+    width: 121px;
+    height: 121px;
+    position: relative;
+    text-align: center;
+    .studio__number-wrap {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include TransY;
+        .text {
+            font-size: 12px; 
+            padding-top: 20px;
+        }
+        .number {
+            font-size: 60px;    
+            font-weight: bold;
+            @include sm {
+                font-size: 40px;
+            }  
+        }
+    }
+}
+
+.book__btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px 0;
+    .btn__text {
+        cursor: pointer;
+        text-align: center;
+        @include btn ;
+        background-color: #525355;
+        border: 1px solid #525355;
+        border-radius: 10px;
+        padding: 20px 10px;
+        width: max-content;
+        display: inline-block;
+    }
+    .btn__if {
+        text-align: left;
+        font-size: 14px;
+        display: none;
+    }
+}

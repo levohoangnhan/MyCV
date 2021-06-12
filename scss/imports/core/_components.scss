@@ -1,0 +1,54 @@
+// css components
+.project__list-item {
+    .img {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            @include transform(translate(-50%, -50%) scale(1));
+            transition: 0.4s;
+        }
+        &:hover {
+            img {
+                @include transform(translate(-50%, -50%) scale(1.05));
+                transition: 0.4s;
+            }
+            &:before {
+                transition: 0.4s;
+                
+
+            }
+        }
+    }
+    .text {
+        margin: 40px 0;
+        text-align: center;
+        .title {
+            a {
+                @include textBox;
+                transition: 0.3s;
+                &:hover {
+                    color: #ffde00;
+                    transition: 0.3s;
+                }
+            }
+        }
+        .inline1 {
+            @include inline1;
+            width: 15px;
+            height: 3px;
+            background: #ffde00;
+            margin: 5px;
+        }
+        p {
+            @include textElis;
+        }
+    }
+}
