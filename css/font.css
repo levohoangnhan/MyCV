@@ -1,45 +1,34 @@
 @font-face {
-    font-family: 'eb';
-    src: url('ElleBaskerville.woff2') format('woff2'),
-        url('ElleBaskerville.woff') format('woff');
+    font-family: 'qs';
+    src: url('../font/Quicksand-Regular.woff2') format('woff2'),
+        url('../font/../font/Quicksand-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'ebn';
-    src: url('ElleBaskerville-Italic.woff2') format('woff2'),
-        url('ElleBaskerville-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: 'ebb';
-    src: url('ElleBaskerville-BoldItalic.woff2') format('woff2'),
-        url('ElleBaskerville-BoldItalic.woff') format('woff');
+    font-family: 'qsb';
+    src: url('../font/Quicksand-Bold.woff2') format('woff2'),
+        url('../font/Quicksand-Bold.woff') format('woff');
     font-weight: bold;
-    font-style: italic;
-    font-display: fallback;
-}
-
-
-
-@font-face {
-    font-family: 'ebsi';
-    src: url('ElleBaskerville-SemiBoldItalic.woff2') format('woff2'),
-        url('ElleBaskerville-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
+    font-style: normal;
     font-display: fallback;
 }
 
 @font-face {
-    font-family: 'ebsb';
-    src: url('ElleBaskerville-SemiBold.woff2') format('woff2'),
-        url('ElleBaskerville-SemiBold.woff') format('woff');
+    font-family: 'qsm';
+    src: url('../font/Quicksand-Medium.woff2') format('woff2'),
+        url('../font/Quicksand-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'qsmb';
+    src: url('../font/Quicksand-SemiBold.woff2') format('woff2'),
+        url('../font/Quicksand-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: fallback;

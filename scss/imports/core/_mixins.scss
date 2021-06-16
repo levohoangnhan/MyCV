@@ -210,7 +210,7 @@
 
 @mixin midFlex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -237,7 +237,16 @@
 	font-family: "eb";
 }
 
-@mixin styletext ($ff: 'ebb',$fz: 20px,$td: none,$cl: #000,$text-transform : uppercase){ 
+@mixin textTitle ($ff: 'qsmb',$fz: 50px,$td: none,$cl: rgb(247, 247, 247),$text-transform : uppercase,$ls : 2px,$lh : 1.5){ 
+    font-family: $ff;
+    font-size: $fz;
+    text-decoration: $td;
+    color: $cl;
+	text-transform: $text-transform;
+	letter-spacing: $ls;
+	line-height: $lh;
+}
+@mixin styletext ($ff: 'qsb',$fz: 20px,$td: none,$cl: rgb(0, 0, 0),$text-transform : uppercase){ 
     font-family: $ff;
     font-size: $fz;
     text-decoration: $td;
@@ -245,7 +254,7 @@
 	text-transform: $text-transform;
 }
 
-@mixin styletext2 ($ff: 'ebs',$fz: 14px,$td: none,$cl: #000,$text-transform : uppercase,$ls : 2px,$lh : 1.5){ 
+@mixin styletext2 ($ff: 'qsmb',$fz: 14px,$td: none,$cl: #000,$text-transform : uppercase,$ls : 2px,$lh : 1.5){ 
     font-family: $ff;
     font-size: $fz;
     text-decoration: $td;
@@ -255,7 +264,7 @@
 	line-height: $lh;
 }
 
-@mixin textMenu ($ff: 'pn',$fz: 14px,$td: none,$cl: #000,$text-transform : uppercase,$ls : 2px,$lh : 2){ 
+@mixin textMenu ($ff: 'qs',$fz: 14px,$td: none,$cl: #000,$text-transform : uppercase,$ls : 2px,$lh : 2){ 
     font-family: $ff;
     font-size: $fz;
     text-decoration: $td;
@@ -265,7 +274,7 @@
 	line-height: $lh;
 }
 
-@mixin btn ($ff: 'pne',$fz: 14px,$td: none,$cl: #ffffff,$text-transform : uppercase,$ls : 2px){ 
+@mixin btn ($ff: 'qsmb',$fz: 14px,$td: none,$cl: #ffffff,$text-transform : uppercase,$ls : 2px){ 
     font-family: $ff;
     font-size: $fz;
     text-decoration: $td;
